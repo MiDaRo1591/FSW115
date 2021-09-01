@@ -1,0 +1,134 @@
+{
+	"oMenuAppetizers": [{
+			"Name": "Cucumber-Stuffed Cherry Tomatoes",
+			"ingredients": "cherry tomatoes, cream cheese, mayonnaise, cucumber, green onion, dill weed.",
+			"description": "1 stuffed tomato: 25 calories, 2g fat (1g saturated fat), 4mg cholesterol, 18mg sodium, 1g carbohydrate (1g sugars, 0 fiber), 0 protein."
+		},
+		{
+			"Name": "Cheese Fries",
+			"ingredients": "steak fries, condensed cheddar cheese soup, 2% milk, garlic powder, onion powder, Paprika.",
+			"description": "1 each: 129 calories, 5g fat (2g saturated fat), 5mg cholesterol, 255mg sodium, 20g carbohydrate (1g sugars, 2g fiber), 3g protein."
+		},
+		{
+			"Name": "Spicy Sweet Potato Chips & Cilantro Dip",
+			"ingredients": "Frys: sweet potatoes, canola oil, chili powder, garlic powder, taco seasoning, salt, ground cumin, pepper, cayenne pepper. DIP: Mayonnaise, sour cream, cream cheese, cilantro, lemon juice, celery salt, pepper.",
+			"description": "1/2 cup chips with about 1 tablespoon dip: 285 calories, 16g fat (4g saturated fat), 8mg cholesterol, 217mg sodium, 33g carbohydrate (14g sugars, 4g fiber), 3g protein."
+		},
+		{
+			"Name": "Ham ‘n’ Cheese Biscuit Stacks",
+			"ingredients": "biscuits, butter, green onions, stone-ground mustard, mayonnaise, honey, deli ham, Swiss cheese, romaine lettuce, pitted ripe olives, pimiento-stuffed olives.",
+			"description": "1 appetizer: 121 calories, 7g fat (3g saturated fat), 16mg cholesterol, 412mg sodium, 11g carbohydrate (2g sugars, 0 fiber), 4g protein."
+		},
+		{
+			"Name": "Creamy Artichoke Dip",
+			"ingredients": "Tortilla chips, artichoke hearts, part-skim mozzarella cheese, cream cheese, Parmesan cheese, mayonnaise, Swiss cheese, lemon juice, yogurt, seasoned salt, jalapeno pepper, garlic powder.",
+			"description": "1/4 cup: 152 calories, 12g fat (5g saturated fat), 27mg cholesterol, 519mg sodium, 4g carbohydrate (1g sugars, 0 fiber), 7g protein."
+		}
+	],
+	"oMenuHotSandwich": [{
+			"sandwich": "Mojito Pulled Pork",
+			"ingredients": "Sandwich Bun, boneless pork shoulder roast, teaspoons salt, oregano, ground cumin, paprika, pepper, cilantro, onions, green chiles, garlic, chicken broth, orange juice, lime juice, Barbecue Sauce, and pickle chips.",
+			"description": "1 each: 418 calories, 16g fat (5g saturated fat), 67mg cholesterol, 916mg sodium, 40g carbohydrate (8g sugars, 2g fiber), 29g protein."
+		},
+		{
+			"sandwich": "Philly Cheese Sandwiches",
+			"ingredients": "Hoagie buns, boneless beef chuck roast, onions, Worcestershire sauce, garlic, oregano, basil, sweet red pepper, green pepper, American cheese.",
+			"description": "1 sandwich: 546 calories, 23g fat (9g saturated fat), 97mg cholesterol, 754mg sodium, 42g carbohydrate (9g sugars, 2g fiber), 40g protein."
+		},
+		{
+			"sandwich": "Bistro Turkey Sandwich",
+			"ingredients": "Ciabatta roll, Turkey, butter, Granny Smith apple, sugar, cinnamon, onion, jellied cranberry sauce.",
+			"description": "1 sandwich: 797 calories, 28g fat (14g saturated fat), 171mg cholesterol, 1196mg sodium, 87g carbohydrate (16g sugars, 6g fiber), 55g protein."
+		},
+		{
+			"sandwich": "Hawaiian Turkey Burger",
+			"ingredients": "Sesame seed hamburger buns, ground turkey, pineapple, green onions, sweet red pepper, soy sauce, salt, teriyaki sauce.",
+			"description": "1 burger: 401 calories, 12g fat (3g saturated fat), 78mg cholesterol, 839mg sodium, 43g carbohydrate (13g sugars, 3g fiber), 31g protein."
+		},
+		{
+			"sandwich": "Sloppy Joe Meatball Subs",
+			"ingredients": "hoagie bun, cheddar cheese, ground beef, eggs, canola oil, onions, bread crumbs, oregano, green pepper, tomato sauce, brown sugar, mustard, chili powder, salt, garlic powder, pepper, Louisiana-style hot sauce.",
+			"description": "1 sandwich: 649 calories, 31g fat (10g saturated fat), 138mg cholesterol, 1369mg sodium, 58g carbohydrate (17g sugars, 4g fiber), 36g protein."
+		}
+	],
+
+	"oMenuColdSandwich": [{
+			"sandwich": "Cobb Salad Sub",
+			"ingredients": "Italian bread, balsamic vinaigrette, baby spinach, deli ham, eggs, bacon, Gorgonzola cheese, cherry tomatoes.",
+			"description": "1 slice: 233 calories, 10g fat (3g saturated fat), 97mg cholesterol, 982mg sodium, 17g carbohydrate (3g sugars, 1g fiber), 18g protein."
+		},
+
+		{
+			"sandwich": "California Roll Wraps",
+			"ingredients": "wheat tortillas, crabmeat, wasabi mayonnaise, avocado, jicama, sweet red pepper, cucumber, bean sprouts.",
+			"description": "1 wrap: 365 calories, 18g fat (3g saturated fat), 10mg cholesterol, 647mg sodium, 39g carbohydrate (2g sugars, 7g fiber), 13g protein."
+		},
+		{
+			"sandwich": "Muffuletta",
+			"ingredients": "Italian bread, pimiento-stuffed olives, cup olive oil, celery, pepperoncini, Greek olives,  onions, red wine vinegar,  capers,  garlic, oregano, basil, pepper, kosher salt, celery seed, Genoa salami, deli ham, mortadella, Swiss cheese, and provolone cheese.",
+			"description": "1 slice: 762 calories, 59g fat (18g saturated fat), 103mg cholesterol, 2326mg sodium, 25g carbohydrate (2g sugars, 2g fiber), 35g protein."
+		},
+		{
+			"sandwich": "Club Roll-Ups",
+			"ingredients": "flour tortillas, cream cheese, ranch salad dressing, bacon, onion, olives, pimientos, jalapeno peppers, deli ham, deli turkey, deli roast beef, cheddar cheese.",
+			"description": "1 roll-up: 554 calories, 29g fat (12g saturated fat), 80mg cholesterol, 1802mg sodium, 39g carbohydrate (2g sugars, 7g fiber), 27g protein."
+		},
+		{
+			"sandwich": "Cranberry Turkey Wraps",
+			"ingredients": "flour tortillas, mandarin oranges, tart apple, dried cranberries, yogurt, mayonnaise, lettuce, deli turkey, mozzarella cheese, pecans.",
+			"description": "1 wrap: 374 calories, 12g fat (4g saturated fat), 54mg cholesterol, 1477mg sodium, 40g carbohydrate (9g sugars, 1g fiber), 27g protein."
+		}
+	],
+	"oMenuDesert": [{
+			"Name": "Chocolate Chip Blondies",
+			"ingredients": "brown sugar, butter, egg, vanilla extract, all-purpose flour, baking powder, salt, semisweet chocolate chips",
+			"description": "1 blondie: 102 calories, 4g fat (2g saturated fat), 19mg cholesterol, 72mg sodium, 16g carbohydrate (12g sugars, 0 fiber), 1g protein."
+		},
+		{
+			"Name": "Frosted Banana Bars",
+			"ingredients": "butter, sugar, egg, ripe bananas, vanilla extract, all-purpose flour, baking soda, salt, cream cheese, butter, confectioners' sugar, vanilla extract.",
+			"description": "1 bar: 202 calories, 8g fat (5g saturated fat), 38mg cholesterol, 100mg sodium, 32g carbohydrate (25g sugars, 0 fiber), 2g protein."
+		},
+		{
+			"Name": "Caramel Snickerdoodle",
+			"ingredients": "",
+			"description": "1 bar: 197 calories, 8g fat (5g saturated fat), 27mg cholesterol, 137mg sodium, 28g carbohydrate (23g sugars, 0 fiber), 2g protein."
+		},
+		{
+			"Name": "Caramel Snickerdoodle Bar",
+			"ingredients": "butter, brown sugar, egg, vanilla extract, flour, baking powder, salt, sugar, ground cinnamon, dulce de leche, white baking chocolate, heavy whipping cream, light corn syrup",
+			"description": "1 bar: 197 calories, 8g fat (5g saturated fat), 27mg cholesterol, 137mg sodium, 28g carbohydrate (23g sugars, 0 fiber), 2g protein."
+		},
+		{
+			"Name": "Cherry Bars",
+			"ingredients": "butter, sugar, salt, egg, vanilla extract, almond extract, all-purpose flour, cherry pie filling, confectioners' sugar, vanilla extract, almond extract, 2% milk",
+			"description": "1 bar: 112 calories, 3g fat (2g saturated fat), 21mg cholesterol, 72mg sodium, 19g carbohydrate (9g sugars, 0 fiber), 1g protein."
+		}
+	],
+	"oMenuDrinks": [{
+			"Name": "Coca-Cola",
+			"ingredients": "",
+			"description": ""
+		},
+		{
+			"Name": "Pepsi",
+			"ingredients": "",
+			"description": ""
+		},
+		{
+			"Name": "Mountian Dew",
+			"ingredients": "",
+			"description": ""
+		},
+		{
+			"Name": "Green Tea",
+			"ingredients": "",
+			"description": ""
+		},
+		{
+			"Name": "Coffee",
+			"ingredients": "",
+			"description": ""
+		}
+	]
+}
