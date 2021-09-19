@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>PokemonList</title>
+    </head>
+    <body>
+        <h2>List that Pokemon</h2>
+        <p id="demo">Demo<br><br></p>
+
+    <script>
+        var xhttp = new XMLHttpRequest(); // Create XML
+        var Demo = document.getElementById("demo"); // Element to change
+        var i=0 // Index Number
+        var eDiv; // Needed for list
+        var eP; // Needed for Data
+        var eA; // Needed for Anchor
+
+        xhttp.onreadystatechange = function() // function to be executed
+        {
+            if (this.readyState == 4 && this.status == 200) // if the XML is ready
+            {
+                let oPokemon = JSON.parse(xhttp.responseText); // Make JSON into Object
+                console.log(oPokemon); // Log Object
+                
+                while(i <  oPokemon.results.length) // While there are Pokemon
+                {
+                console.log(`${i} ${oPokemon.results[i].name}`); // Tick for tracking
+                eDiv = document.createElement('div'); // Make a new division
+                eDiv.id = `Index_${i}` // id = Index_#
+                eDiv.textContent = `${oPokemon.results[i].name}: `; // Div text is the name
+                
+                eA = document.createElement('a'); // Make a new anchor
+                eA.id = `Index_${i}` // id = Index_#
+                eA.textContent = `Data Entry`; // Anchor text is the url
+                eA.href = oPokemon.results[i].url; // Anchor hyper referance is the url
+
+                eDiv.appendChild(eA); // Apply Anchor to Division
+                Demo.appendChild(eDiv); // Apply Division to Demo
+                i++; // Next Index
+                }
+            }
+        };
+        xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/", true);
+        xhttp.send();
+    </script>
+    </body>
+</html>
