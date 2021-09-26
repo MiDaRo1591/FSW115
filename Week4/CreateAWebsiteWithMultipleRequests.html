@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Create a Website with Multiple Requests</title>
+    </head>
+    <body>
+        
+        <div id = 'Testing'>
+            <!--
+            <input id = "TDAText" 
+            style="background-color: rgba(255, 255, 255, 0);"
+                type = "text" 
+                placeholder = "Title"
+                value = "PretendID-Random-Ignore">
+        -->
+            <button id = "TestSubmit" type = "button" onclick = "fGet()">Test</button>
+        </div> 
+
+        <div id = 'TDAGet'></div>
+
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    </body>
+    <script>
+
+var UserName = `Micah.Ross`; // User Name
+var ItemId = `42c89d1e-4a5b-438d-b156-a8ced672814c`; // GetOne ID
+var iIdAdd = 0; // Updates made Divs for requested Data
+var CORS = `` // If we need CORS later, leave blank.
+var API = `http://api.bryanuniversity.edu/${UserName}/list/${ItemId}`; // Build API on the fly
+var TDAText = document.getElementById('TDAText'); // Post value
+var TDAGet = document.getElementById('TDAGet'); // Post to
+
+function fAutoPop() // This automaticly get's the data and posts it.
+{
+    axios.get(API) // Get API
+    .then(function (responce){
+        console.log(`Initial Responce: `, responce) // Debut show responce data
+        BuildDiv(responce); // Build a Division for responces
+    })
+    .catch(error => console.log(`Error Responce: ${error}`)) // log any error
+}
+function fGet(){
+    // CORS= `https://cors-anywhere.herokuapp.com/`; // If we need to use CORS
+    //ItemId = TDAText.value;
+    axios.get(API) // Get API
+    .then(function (responce){
+
+        BuildDiv(responce); // Build a Division for responces
+    })
+    .catch(error => console.log(`Error Responce: ${error}`)) // log any error
+}
+function BuildDiv(InputData) // Build Division
+{
+    if(InputData == '') // If your input is blank
+        {InputData = `Error: Data not Found`;} // Write a log
+    console.log(InputData); // Log log
+
+    var eDiv = document.createElement("div"); // Make new division
+    eDiv.id = "Note_"+iIdAdd; // Add a number to the division
+    eDiv.textContent = InputData.data.name; // we want the input to be displayed
+    eDiv.style = 'height:300px;width:190px;float:left;border-style:solid;border-color:black;border-width:2px;padding:5px;margin:5px;background-image:url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");'
+    
+    var eP = document.createElement("p"); // Make new paragraph
+    eP.textContent = InputData.data.description; // we want the input to be displayed
+    
+    eDiv.appendChild(eP);
+    TDAGet.appendChild(eDiv); // append to document
+
+    iIdAdd++; // increase number for next
+}
+/*
+function fPut(){}
+function fPost(){}
+function fDelete(){}
+*/
+// fAutoPop(); // Auto Populate
+
+    </script>
+</html>
