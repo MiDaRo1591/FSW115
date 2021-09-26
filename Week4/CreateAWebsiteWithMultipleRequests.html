@@ -13,8 +13,10 @@
                 placeholder = "Title"
                 value = "PretendID-Random-Ignore">
         -->
-            <button id = "TestSubmit" type = "button" onclick = "fGet()">Test</button>
-        </div> 
+        <button id = "TestSubmit" type = "button" onclick = "fGet1()">Test</button>
+        <button id = "TestSubmit" type = "button" onclick = "fGet2()">Test</button>
+        <button id = "TestSubmit" type = "button" onclick = "fGet3()">Test</button>
+    </div> 
 
         <div id = 'TDAGet'></div>
 
@@ -23,7 +25,7 @@
     <script>
 
 var UserName = `Micah.Ross`; // User Name
-var ItemId = `42c89d1e-4a5b-438d-b156-a8ced672814c`; // GetOne ID
+var ItemId = ``; // GetOne ID
 var iIdAdd = 0; // Updates made Divs for requested Data
 var CORS = `` // If we need CORS later, leave blank.
 var API = `http://api.bryanuniversity.edu/${UserName}/list/${ItemId}`; // Build API on the fly
@@ -39,9 +41,28 @@ function fAutoPop() // This automaticly get's the data and posts it.
     })
     .catch(error => console.log(`Error Responce: ${error}`)) // log any error
 }
-function fGet(){
-    // CORS= `https://cors-anywhere.herokuapp.com/`; // If we need to use CORS
-    //ItemId = TDAText.value;
+function fGet1(){
+    axios.get(API) // Get API
+    .then(function (responce){
+        console.log(`Initial Responce: `, responce) // Debut show responce data
+        console.log(`Second Responce: `, responce.data);
+        console.log(`Third Responce: `, responce.data.description);
+
+        BuildDiv(responce); // Build a Division for responces
+    })
+    .catch(error => console.log(`Error Responce: ${error}`)) // log any error
+}
+function fGet2(){   
+    ItemId = '5705e84a-7023-4e33-ad64-e539fc15b90b';
+    axios.get(API) // Get API
+    .then(function (responce){
+
+        BuildDiv(responce); // Build a Division for responces
+    })
+    .catch(error => console.log(`Error Responce: ${error}`)) // log any error
+}
+function fGet3(){
+    ItemId = 'f3cc20a8-9c0d-4982-8ba5-4e0fbd5861ad';
     axios.get(API) // Get API
     .then(function (responce){
 
