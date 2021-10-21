@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--    <link rel='stylesheet' href='starwars.css'> -->
+    <Style>
+      </Style>
+    </head>
+    <body>
+        <h1 style='text-align:center;' id='title'>Star Wars People Checker</h1>
+        <div>
+            Person ID <input type = "number" style = 'width:25px' id = 'itemID' value = "7"/>
+        </div>
+        <div>
+            <button style = 'align-items: center;' id = 'fetchButton' onclick = "fGet()">Fetch Data</button>
+        </div>
+
+        <br /><br />
+
+        <div id='ResponseData' class='dataWrapper'>
+            <div class='dataCellLabel' id='dataLabel1'></div>
+            <div class='dataCell' id='dataValue1'></div>
+            <div class='dataCellLabel' id='dataLabel2'></div>
+            <div class='dataCell' id='dataValue2'></div>
+        </div>
+
+        <br /><br />
+        
+        <div class='footer'>
+            <hr />
+            <a href='https://swapi.dev/api/' target='_new'>Data courtesy of Star War API</a>
+        </div>
+        
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+        <!-- <script src='starwars.js'></script> -->
+        <script>
+
+const fGet = () => { // Make the function a const
+    
+    var CORS = `cors-anywhere.herokuapp.com`; // CORS
+    var SWAPI = `swapi.dev/api`; // SWAPI
+    var itemID = document.getElementById("itemID").value;
+    var API = `https://${CORS}/${SWAPI}/people/${itemID}`; // API
+    console.log(`Check: ${API}`);
+
+    axios.get(API) // Get that API
+    .then(function (responce){
+        console.log(responce);
+    })
+    .catch(error => console.log(`Error Responce: ${error}`)) // log any error
+}
+        </script>
+    </body>
+</html>
